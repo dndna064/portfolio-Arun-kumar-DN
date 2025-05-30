@@ -1,96 +1,103 @@
 body{
     margin:0;
-  padding: 30px;
-  background-color:rgb(255, 255, 255);
+  padding: 0px;
+  background-color:rgb(216, 245, 247);
   color: rgb(0, 0, 0);
-  h3{
-    color: rgb(6, 68, 253);
-    text-align: left;
-    background-color: rgb(184, 208, 227);
-    width: 20%
-  }
   
 }
 
 .img .head {
- display: flex;
  margin-left:300px;
- margin:7% 0% 0% 10%;
- color: rgb(4, 4, 251);
-
+ margin:8% 0% 0% 4%;
+ color: rgb(255, 8, 0);
+ padding:0%;
+ font-size: 1.3em; /* Increases text size inside the .head div */
+ font-family: 'Courier New', monospace; /* Retro typewriter style */
 }
 .head p{
     text-align: left;
     padding-left: 0%;
+    color: rgb(35, 38, 38);
+    font-family: 'Lucida Handwriting', cursive; /* Elegant cursive */
     
+    
+}
+header{
+  height: 200px;
+  background-color: rgb(9, 150, 237);
 }
 .img {
-    
-    border-radius:20px ;
-    margin-left:0%;
-    margin-bottom: 0%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    border:solid rgb(255, 145, 0); /* Border color */
+    border-width: 6px; /* Border width */
+    border-radius:40px ;
+    padding-top:0%;
     display: flex;
+    height:450px;
     width: 100%;
-    background-color: #bdbcbc;
-    transform: scale(0.5); /* Scales the container to 80% of its original size */
-    transform-origin: center; /* Ensures scaling happens from the center */
-   
+    background-color: rgb(210, 220, 255);
+    transform: scale(0.5); /* Slightly scales the image */
+    transform-origin: top; /* Ensures scaling happens from the top */
+    animation: moveUp 0.6s ease-out; /* Applies the animation */
 }
- 
-.pic{
+.pic {
     display: flex;
-    height: 380px;
-    width: 320px;
-    overflow:hidden;
-    border:solid rgb(235, 252, 3);
-    border-radius: 50%/40%;
-    margin: 5px 0% 0% 20% ;
-    background-color: rgb(56, 56, 56); 
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */ 
+    margin: 0% 0% 0% 20%; /* Adjust margins */
+    background-color: rgb(210, 220, 255); /* Background color */
 }
+
+.pic img{
+  border: solid rgb(0, 0, 0); /* Border color */
+    border-radius: 50%/40%; /* Fully circular border */
+    height:500px;
+    width:460px;
+    margin-top: 55%;
+    background-color: rgb(205, 51, 51);
+}
+
+
  
 .vr{
     position: absolute;
-    margin-top: 5px;
+    margin-top: 2%;
+    overflow: hidden;
     left:50%;
     width:1px;
     height: 380px;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(0, 0, 0);
     margin-left:0%;
     margin-bottom: 0%;
 }
-.intro p{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: left;
+
+.intro, .skills, .edu, .proj {
+    display: flex; /* Aligns child elements horizontally */
+    justify-content: space-between; /* Distributes space evenly */
+    align-items: stretch; /* Ensures child elements stretch to the same height */
+    margin-top: 5%; /* Keeps the top margin */
+    gap: 0; /* Removes any gap between child elements */
 }
 
-.skills p{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: left;
+.intro h3, .skills h3, .edu h3, .proj h3 {
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: rgb(184, 208, 227); /* Adds background color */
+    box-sizing: border-box; /* Ensures padding is included within the border */
+    width: 30%; /* Sets a fixed width for h3 */
+    text-align: center; /* Centers text inside h3 */
+    height: 100%; /* Ensures h3 fills the height of its parent container */
 }
 
-.edu p{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: left;
+.intro p, .skills ul, .edu ul, .proj ol {
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: rgb(181, 229, 239); /* Adds background color */
+    box-sizing: border-box; /* Ensures padding is included within the border */
+    width: 70%; /* Sets a fixed width for the content */
+    text-align: left; /* Aligns text inside the content */
+    height: 100%; /* Ensures content fills the height of its parent container */
 }
 
-.proj p{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: left;
-}
 .links{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -136,4 +143,177 @@ body{
     background-color: #d9b9b5;
   }
 
+@keyframes moveUp {
+    from {
+        transform: translateY(100%); /* Starts from the bottom */
+        
+    }
+        
+    to {
+        transform: translateY(0); /* Ends at the top */
+        transform: scale(0.5); /* Slightly scales the image */
+    }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1f729b; /* Changed to a solid color */
+  padding: 20px 10px; /* Reduced padding */
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center sections evenly */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Reduced gap for compact layout */
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 150px; /* Reduced minimum width */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin: 5px 0; /* Reduced spacing */
+}
+
+.social-links {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Reduced gap between icons */
+}
+
+.social-links a img {
+  border-radius: 50%;
+  width: 30px; /* Reduced icon size */
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+  transform: scale(1.1);
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 150px;
+  text-align: left;
+}
+
+.contact-form form {
+  display: block;
+}
+
+.contact-form label {
+  display: block;
+  margin: 5px 0; /* Reduced spacing */
+  font-size: 12px; /* Adjusted font size */
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 5px; /* Reduced padding */
+  margin-bottom: 5px; /* Reduced spacing */
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Reduced border radius */
+}
+
+.contact-form button {
+  background-color: #1c03ff;
+  color: white;
+  border: none;
+  padding: 8px 15px; /* Reduced button size */
+  border-radius: 3px; /* Reduced border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0a02a8;
+}
+
+/* Styling for the main section */
+main {
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Styling for section headers */
+main h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8em;
+  color: #1c03ff;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #1c03ff;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Styling for paragraphs */
+main p {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+/* Styling for lists */
+main ul, main ol {
+  padding-left: 20px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.1em;
+  color: #333;
+}
+
+main ul li, main ol li {
+  margin-bottom: 10px;
+}
+
+/* Add spacing between sections */
+main > div {
+  margin-bottom: 30px;
+}
+
+/* Horizontal rule styling */
+main hr {
+  border: none;
+  height: 3px;
+  background-color: #1c03ff;
+  margin: 30px 0;
+}
+
+/* Styling for intro, skills, education, and projects sections */
+.intro, .skills, .edu, .proj {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for content inside sections */
+.intro p, .skills ul, .edu ul, .proj ol {
+  background-color: #e9f5ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
   
