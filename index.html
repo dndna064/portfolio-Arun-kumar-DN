@@ -7,49 +7,42 @@
     <link rel="stylesheet" href="new.css" />
   </head>
   <body>
+    <header>
+    <p><br></p>
     <div class="img">
       <div class="pic">
        <img
         src="passportsize_photo-removebg-preview.png"
         alt="Portfolio Image"
-        class="img"
-        />
+        class="img"/>
       </div>
       <div class="vr"></div>
       <div class="head">
-        <pre><H1>ARUN KUMAR DN</H1>
-Chitradurga|karnataka|575 535<br>9352****57|dn******@gmail.com<br>BE in CSE
-        </pre>
+        <H1>ARUN KUMAR DN</H1>
+        <p>
+Chitradurga|karnataka|575 535<br>9352****57|dn******@gmail.com<br>BE in CSE</p>
       </div>
     </div>
-    <hr />
-    <div class="intro">
-      <h3>INTRODUCTION:</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-        cupiditate quae magnam in sapiente dicta obcaecati, perferendis enim
-        quis ipsa sint laudantium earum nisi inventore, totam rerum corrupti vel
-        molestiae neque quos omnis repellat? Possimus enim itaque illum ad modi
-        architecto, magni aliquam magnam? Obcaecati libero tempore molestias
-        minus corrupti harum, odio animi enim amet reiciendis, laboriosam culpa
-        commodi vitae! Id, incidunt at est quas ducimus voluptatum voluptas iste
-        quibusdam totam dolorum possimus quasi quidem labore a temporibus cumque
-        ad tenetur, accusamus ea sapiente vitae illum doloribus error.
-        Architecto quia maxime eius facere. Vel enim ipsa illo iure quidem
-        nesciunt.
-      </p>
-    </div>
+  </header>
+  
+  <hr style="height: 3px; background-color: rgb(255, 175, 3); border: none;margin-top: 3px;" />
+  <main>
+  <div class="intro">
+  <h3>INTRODUCTION:</h3>
+  <p>
+    My name is Arun Kumar DN, and I am a dedicated student currently pursuing Computer Science and Engineering at Dr. Ambedkar Institute of Technology. My academic journey began with a diploma in Electrical Engineering, where I developed a strong foundation in technical concepts. However, my passion for programming, problem-solving, and innovation inspired me to transition into Computer Science. This shift allowed me to explore my interests in software development, data analysis, and emerging technologies. I am driven by a desire to learn, grow, and contribute to impactful projects that solve real-world challenges. With a commitment to excellence and a curious mindset, I aim to make meaningful contributions to the tech industry.
+  </p>
+</div>
     <hr />
     <div class="skills">
       <h3>SKILLS:</h3>
-      <pre><big>
-    html
-    css 
-    javascript
-    c 
-    c++
-  </big>
-  </pre>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C</li>
+        <li>C++</li>
+      </ul>
     </div>
     <hr />
     <div class="edu">
@@ -71,44 +64,52 @@ Chitradurga|karnataka|575 535<br>9352****57|dn******@gmail.com<br>BE in CSE
     <div class="proj">
       <h3>PROJECTS:</h3>
       <ol>
-        <li>Asteroid risk management-Relational database management project</li>
-        <li>Stock market data analysis-Object oriented programming project</li>
+        <li>Asteroid risk management - Relational database management project</li>
+        <li>Stock market data analysis - Object-oriented programming project</li>
       </ol>
     </div>
     <hr />
+    </main>
     <footer>
-      <h3>CONTACT INFO AND LINKS:</h3>
-      <ul>
-        <li>Email-dn******@gmail.com</li>
-        <li>Phone no-9353****57</li>
-      </ul>
-
-      
-        <div class="link">
-          <a href="https://www.instagram.com/arundn80/?next=%2F"
-            ><img
+      <h3>Contact Info and Links:</h3>
+      <div class="footer-content">
+        <div class="contact-info">
+          <ul>
+            <li>Email: dn******@gmail.com</li>
+            <li>Phone: 9353****57</li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/arundn80/?next=%2F" target="_blank">
+            <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png"
+              alt="Instagram"
               height="35px"
               width="35px"
-          /></a>
-          <a
-            href="https://drait.edu.in/home/Computer-Science-and-Engineering-Overview"
-            ><img src="/th.jpeg" height="40px" width="40px"
-          /></a>
+            />
+          </a>
+          <a href="https://drait.edu.in/home/Computer-Science-and-Engineering-Overview" target="_blank">
+            <img
+              src="https://imgs.search.brave.com/vgX4laBCMEjtFe12wi533rIuPtyrB0FXuzBqC_8JX6w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ib29r/dXJhZG1pc3Npb24u/Y29tL2NvbGxlZ2Vf/bG9nby9Eci4lMjBB/bWJlZGthciUyMElu/c3RpdHV0ZSUyME9m/JTIwVGVjaG5vbG9n/eV9sb2dvMjEwOTI0/MDUyNjAxLmpwZw"
+              alt="College Website"
+              height="40px"
+              width="40px"
+            />
+          </a>
         </div>
-        <div class="contact-information" id="contact-information">
-
-          <h2>FORM:</h2>
-     <form>
-         <label id="1">
-            Email_ID<input text="checkbox" placeholder="enter your email" id="1">
-         </label><br>
-        <label id="2">
-          mobile no.<input text="number" placeholder="797***96" id="2"> </label>
-         
-                 </form>
-                 <button>submit</button></div>
- </main><hr>
+        <div class="contact-form">
+          <h4>Contact Form:</h4>
+          <form>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <br />
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="mobile" placeholder="**********" />
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
